@@ -36,6 +36,8 @@ class PageDev extends StatefulWidget {
   State<PageDev> createState() => _PageDevState();
 }
 
+// _____ DEBUT ERREUR ______
+
 Future<String> generateResponse(String prompt) async {
   const apiKey = apiSecretKey;
 
@@ -63,6 +65,8 @@ Future<String> generateResponse(String prompt) async {
 
   return newresponse['choices'][0]['text'];
 }
+
+// _____ FIN ERREUR ______
 
 class _PageDevState extends State<PageDev> {
   String messageIaPdf = "";
